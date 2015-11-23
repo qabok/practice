@@ -5,4 +5,8 @@ package ru.ok.practice.patterns.singleton;
  */
 public enum SingletonEnum {
     INSTANCE;
+
+    SingletonEnum() {
+        System.out.println(this.getClass() + " created");
+    }
 }

@@ -10,7 +10,7 @@ public class SingletonSync {
     private static SingletonSync instance;
 
     private SingletonSync() {
-
+        System.out.println(this.getClass() + " created");
     }
 
     public static synchronized SingletonSync getInstance() {

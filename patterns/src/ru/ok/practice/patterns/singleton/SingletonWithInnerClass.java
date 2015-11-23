@@ -9,7 +9,7 @@ public class SingletonWithInnerClass {
      * метода getInstance(). Но обрабатывать исключительные ситуации в конструкторе по-прежнему не можем
      */
     private SingletonWithInnerClass() {
-
+        System.out.println(this.getClass() + " created");
     }
 
     private static class SingletonHolder {

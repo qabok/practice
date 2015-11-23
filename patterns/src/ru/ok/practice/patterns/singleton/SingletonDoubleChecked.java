@@ -12,7 +12,7 @@ public class SingletonDoubleChecked {
     private static SingletonDoubleChecked instance;
 
     private SingletonDoubleChecked() {
-
+        System.out.println(this.getClass() + " created");
     }
 
     public static SingletonDoubleChecked getInstance() {

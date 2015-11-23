@@ -11,7 +11,7 @@ public class SingletonSimple {
 
 
     private SingletonSimple() {
-
+        System.out.println(this.getClass() + " created");
     }
 
     public static SingletonSimple getInstance() {

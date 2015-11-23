@@ -12,7 +12,7 @@ public class SingletonDoubleCheckedVolatile {
     private static volatile SingletonDoubleCheckedVolatile instance;
 
     private SingletonDoubleCheckedVolatile() {
-
+        System.out.println(this.getClass() + " created");
     }
 
     public static SingletonDoubleCheckedVolatile getInstance() {
